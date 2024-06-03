@@ -6,11 +6,11 @@
 //     collisionController
 // }
 
-
+import { testCollisions } from "../dal/db/mockDb.ts";
 import CollisionController from "../web/controllers/collision.controller.ts";
 import CollisionLookup from '../core/MOVE/collision/Lookup.ts';
 import { CollisionServices } from "../dal/services/CollisionServices.ts"
-const collisionLookup = new CollisionLookup(new CollisionServices);
+const collisionLookup = new CollisionLookup(new CollisionServices(testCollisions));
 const collisionController = new CollisionController(collisionLookup);
 export {
     collisionController
