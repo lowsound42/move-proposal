@@ -1,4 +1,4 @@
-import { Collision } from "../../core/collision/Collision.ts";
+import { Collision } from "../../core/MOVE/collision/Collision.ts";
 
 
 const collisionA = new Collision(1, 'yonge and bloor', false)

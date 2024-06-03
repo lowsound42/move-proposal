@@ -1,4 +1,4 @@
-import { ICollisionLookup } from "../../core/collision/ICollisionLookup.ts";
+import { ICollisionLookup } from "../../core/MOVE/collision/ICollisionLookup.ts";
 import { RouterContext} from "../../deps.ts";
 
 class CollisionController {
