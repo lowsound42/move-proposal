@@ -7,7 +7,7 @@ const app = new Application();
 router.init(app);
 
 app.addEventListener('listen', () => {
-  console.log(`Listening on: localhost:${port}`);
+  console.log(`Ahoy matey, you be sailin' on port:${port}`);
 });
 
 await app.listen({ port });
