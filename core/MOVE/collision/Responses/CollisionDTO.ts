@@ -1,4 +1,4 @@
-export class GetCollisionDTO {
+export class CollisionDTO {
     id!: number;
     modifiedBy!: string;
     modifiedDatetime!: Date;

@@ -1,7 +1,7 @@
 import { Collision } from "../../core/MOVE/collision/Collision.ts";
 import { ICollisionServices } from "../../core/MOVE/services/ICollisionServices.ts";
 import { mapResponseToDTO } from "../../core/mapper.ts";
-import { GetCollisionDTO } from "../../core/MOVE/collision/Responses/GetCollisionDTO.ts";
+import { CollisionDTO } from "../../core/MOVE/collision/Responses/CollisionDTO.ts";
 
 
 export class CollisionServices implements ICollisionServices {
@@ -11,8 +11,8 @@ export class CollisionServices implements ICollisionServices {
     this.db = injectedDb;
   }
     public getCollisions =  (
-      ): GetCollisionDTO[] => {
-        const collisionResponse = this.db.map(element => mapResponseToDTO<GetCollisionDTO, Collision>(element, {
+      ): CollisionDTO[] => {
+        const collisionResponse = this.db.map(element => mapResponseToDTO<CollisionDTO, Collision>(element, {
           id: "id",
           ksi: "ksi",
           location: "location",

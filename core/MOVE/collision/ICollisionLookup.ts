@@ -1,5 +1,5 @@
-import { GetCollisionDTO } from "./Responses/GetCollisionDTO.ts";
+import { CollisionDTO } from "./Responses/CollisionDTO.ts";
 
 export interface ICollisionLookup {
-    getAllCollisions(): GetCollisionDTO[]; 
+    getAllCollisions(): CollisionDTO[]; 
 }

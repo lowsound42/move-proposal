@@ -1,5 +1,5 @@
-import { GetCollisionDTO } from "../collision/Responses/GetCollisionDTO.ts";
+import { CollisionDTO } from "../collision/Responses/CollisionDTO.ts";
 
 export interface ICollisionServices {
-    getCollisions(): GetCollisionDTO[]
+    getCollisions(): CollisionDTO[]
 }
