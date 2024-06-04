@@ -13,7 +13,9 @@ import CollisionController from "../web/controllers/collision.controller.ts";
 import CollisionLookup from '../core/MOVE/collision/Lookup.ts';
 import { CollisionServices } from "../dal/services/CollisionServices.ts"
 
-const collisionLookup = new CollisionLookup(new CollisionServices(testCollisions));
+const collisionServices = new CollisionServices(testCollisions);
+
+const collisionLookup = new CollisionLookup(collisionServices);
 
 const collisionController = new CollisionController(collisionLookup);
 

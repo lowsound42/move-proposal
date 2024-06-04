@@ -1,10 +1,10 @@
 import { Application } from './deps.ts';
-import router from './web/routers/index.ts';
+import reporterRouter from './web/routers/reporterRouter.ts';
 
-const port = 8000;
+const port = 8200;
 const app = new Application();
 
-router.init(app);
+reporterRouter.init(app);
 
 app.addEventListener('listen', () => {
   console.log(`Ahoy matey, you be sailin' on port:${port}`);
