@@ -2,3 +2,5 @@
 - Reusability -> dependency injection allows us to inject what is required but specific modules or classes
 - Flexibility -> less of a need to meddle with core business layers -> we can modify existing injected services (or create new ones)
 - Explicit type safety -> you will know when things aren't correctly setup
+- This is SUPER DUPER rudimentary -> there are a lot of helpers and libraries we could use to make this way better
+    - Example of what Oak offers that I didn't even try using: https://deno.land/x/oak_decorators@v0.1.4
