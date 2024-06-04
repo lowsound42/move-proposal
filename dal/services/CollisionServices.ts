@@ -2,8 +2,6 @@ import { Collision } from "../../core/MOVE/collision/Collision.ts";
 import { ICollisionServices } from "../../core/MOVE/services/ICollisionServices.ts";
 import { mapResponseToDTO } from "../../core/mapper.ts";
 import { CollisionDTO } from "../../core/MOVE/collision/Responses/CollisionDTO.ts";
-import { ILogger } from "../../shared/Logger/ILogger.ts";
-
 
 export class CollisionServices implements ICollisionServices {
   db: Collision[];
