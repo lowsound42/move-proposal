@@ -1,0 +1,4 @@
+- Loose coupling -> depend on abstractions/interfaces/contracts and not the concrete implementation. This means we have the freedom to switch out implementations.
+- Reusability -> dependency injection allows us to inject what is required but specific modules or classes
+- Flexibility -> less of a need to meddle with core business layers -> we can modify existing injected services (or create new ones)
+- Explicit type safety -> you will know when things aren't correctly setup
