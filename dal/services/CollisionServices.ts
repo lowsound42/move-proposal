@@ -21,4 +21,22 @@ export class CollisionServices implements ICollisionServices {
         }));
         return collisionResponse;
       }
+  
+      public getOneCollision =  (
+        id:number
+      ): GetCollisionDTO => {
+        const collisionToMap: Collision | undefined = this.db.find(element => element.id === id);
+        let collisionResponse;
+        if(collisionToMap !== undefined){
+          collisionResponse = mapResponseToDTO<GetCollisionDTO, Collision>(collisionToMap, {
+            id: "id",
+            ksi: "ksi",
+            location: "location",
+            modifiedBy: "modifiedBy",
+            modifiedDatetime: "modifiedDatetime"
+          })
+        }
+        return collisionResponse;
+      }
+    
 }
