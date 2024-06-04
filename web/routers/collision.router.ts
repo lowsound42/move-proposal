@@ -8,4 +8,9 @@ collisionRouter.get(
     collisionController.getCollisions,
 );
 
+collisionRouter.get(
+    '/api/collisions/:id',
+    collisionController.getOneCollision,
+  );
+
 export default collisionRouter;

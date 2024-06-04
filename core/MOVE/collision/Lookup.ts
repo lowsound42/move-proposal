@@ -1,5 +1,6 @@
 import { ICollisionLookup } from "./ICollisionLookup.ts";
 import { ICollisionServices } from "../services/ICollisionServices.ts";
+import { CollisionDTO } from "./Responses/CollisionDTO.ts";
 
 export default class CollisionLookup implements ICollisionLookup {
 
@@ -11,5 +12,9 @@ export default class CollisionLookup implements ICollisionLookup {
 
     getAllCollisions() {
         return this.collisionService.getCollisions();
+    }
+
+    getOneCollision(id: number): CollisionDTO {
+        return this.collisionService.getOneCollision(id);
     }
 }
