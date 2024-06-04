@@ -14,7 +14,7 @@ export default class CollisionLookup implements ICollisionLookup {
         return this.collisionService.getCollisions();
     }
 
-    getOneCOllision(id: number): GetCollisionDTO {
+    getOneCollision(id: number): GetCollisionDTO {
         return this.collisionService.getOneCollision(id);
     }
 }

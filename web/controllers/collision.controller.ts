@@ -12,6 +12,13 @@ class CollisionController {
     ): void => {
       response.body = this.lookup.getAllCollisions();
     }
+
+    public getOneCollision = (
+      { request, response }: RouterContext<string>,
+    ): void => {
+      const id = request.url.pathname.split('').pop();
+      response.body = this.lookup.getOneCollision(parseInt(id!));
+    }
   
   }
 
